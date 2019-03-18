@@ -1,0 +1,207 @@
+body {
+  background-color: #424242;
+  background: #833ab4;
+  background: -webkit-gradient(linear, left top, right top, from(#fcb045), color-stop(#fd1d1d), to(#833ab4));
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  color: white;
+  font-size: 18px;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  max-width: 1200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  font-size: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+.header p select {
+  color: white;
+  background-color: white;
+  background: rgba(100, 50, 50, 0.5);
+  -webkit-box-shadow: 0px 0px 50px rgba(150, 100, 150, 0.5);
+          box-shadow: 0px 0px 50px rgba(150, 100, 150, 0.5);
+  cursor: pointer;
+}
+.header p input {
+  border: 0.5px solid grey;
+  color: white;
+  background-color: white;
+  background: rgba(100, 50, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 50px rgba(150, 100, 150, 0.5);
+          box-shadow: 0px 0px 50px rgba(150, 100, 150, 0.5);
+}
+
+.userWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.users__block {
+  background-color: #E6E04C;
+  padding: 40px;
+  margin: 40px 40px;
+  border: 0.5px solid grey;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 50px rgba(150, 100, 150, 0.5);
+          box-shadow: 0px 0px 50px rgba(150, 100, 150, 0.5);
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+}
+@media screen and (max-width: 1200px) {
+  .users__block {
+    -ms-flex-preferred-size: 15%;
+        flex-basis: 15%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .users__block {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
+}
+
+input {
+  margin-bottom: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+span.users__name {
+  display: inline-block;
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
+  margin-right: 8px;
+}
+
+p.users__name {
+  display: inline-block;
+}
+
+span.users__name:first-letter {
+  text-transform: capitalize;
+}
+
+span.users__text:first-letter {
+  text-transform: capitalize;
+}
+
+.window__wrapper {
+  display: none;
+  width: 30%;
+  height: 60%;
+  text-align: center;
+  padding: 40px;
+  border: 3px solid grey;
+  border-radius: 10px;
+  color: black;
+  background-color: #E6E04C;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.8);
+}
+.window__wrapper img {
+  margin: auto;
+  margin-bottom: 15px;
+}
+.window__wrapper p {
+  border: 0.5px solid grey;
+  font-size: 18px;
+  opacity: 0.8;
+  color: white;
+  background-color: #E6E04C;
+  background: rgba(100, 50, 33, 0.9);
+  -webkit-box-shadow: 0px 0px 50px rgba(150, 100, 150, 0.9);
+          box-shadow: 0px 0px 50px rgba(150, 100, 150, 0.9);
+}
+.window__wrapper span {
+  color: white;
+  border: 1px solid grey;
+  font-size: 18px;
+  background-color: lightgrey;
+  opacity: 0.8;
+  margin-right: 0px;
+  padding: 0px 8px;
+  background-color: #E6E04C;
+  background: rgba(100, 50, 0, 0.9);
+  -webkit-box-shadow: 0px 0px 50px rgba(150, 100, 150, 0.9);
+          box-shadow: 0px 0px 50px rgba(150, 100, 150, 0.9);
+}
+.window__wrapper img {
+  display: block;
+  text-align: center;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 1200px) {
+  .window__wrapper {
+    min-width: 30%;
+    max-height: 60%;
+    height: 550px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .window__wrapper {
+    width: 80%;
+    height: 70%;
+  }
+}
+
+.window__content {
+  text-align: center;
+}
+
+.window__btn {
+  margin-top: 20px;
+  padding: 15px 30px;
+  border: 0.5px solid grey;
+  color: white;
+  background-color: white;
+  background: rgba(100, 50, 0, 0.7);
+  -webkit-box-shadow: 0px 0px 50px rgba(150, 100, 150, 0.5);
+          box-shadow: 0px 0px 50px rgba(150, 100, 150, 0.5);
+}
+
+.hide {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.background {
+  color: white;
+  background-color: #E6E04C;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 50px rgba(150, 100, 150, 0.5);
+          box-shadow: 0px 0px 50px rgba(150, 100, 150, 0.5);
+}
